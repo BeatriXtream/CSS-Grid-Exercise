@@ -7,13 +7,73 @@ body {
 }
 
 header{
-    grid-template-columns:auto;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas: "img1 imagen2";
 }
 
-.divimg1{
-    max-height: 200px;
+.divimg3{
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr; 
+grid-template-rows: 0.9fr 1.2fr 1fr; 
+gap: 20px; 
+grid-template-areas: 
+  "img3 img4 divimg5 img6"
+  "divimg8 divimg8 divimg5 img7"
+  "img9 img10 img11 img11"; 
 }
 
-.img1{
-    size: 5%;
+.img3 { 
+    grid-area: img3; 
+    width: 200px;
+    height: 300px;
+}
+
+.img4 { 
+    grid-area: img4;
+    width: 200px;
+    height: 300px;  
+}
+
+.img5 { 
+    grid-area: img5;
+    width: 200px;
+    height: 300px; 
+}
+
+.img6 { 
+    grid-area: img6; 
+    width: 200px;
+    height: 300px;
+}
+
+.img7 { 
+    grid-area: img7; 
+    width: 200px;
+    height: 300px;
+}
+
+.img8 { 
+    grid-area: img8;
+    width: 200px;
+    height: 300px; 
+}
+
+.img9 { 
+    grid-area: img9; 
+    width: 200px;
+    height: 300px;
+}
+
+.img10 { 
+    grid-area: img10; 
+    width: 200px;
+    height: 300px;
+}
+
+.img11 { 
+    grid-area: img11;
+    width: 200px;
+    height: 300px; 
 }
